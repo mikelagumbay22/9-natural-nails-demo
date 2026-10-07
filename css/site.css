@@ -63,6 +63,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+@media (max-width: 899.98px) { html { scroll-padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
 body {
   margin: 0;
@@ -450,3 +452,13 @@ a[href^="tel:"] { white-space: nowrap; }
 @media (min-width: 900px) {
   .visit-split { grid-template-columns: 1fr 1fr; gap: 4rem; }
 }
+
+.demo-form { max-width: 40rem; margin-inline: auto; }
+.demo-form fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: .35rem; }
+.demo-form label { font-weight: 600; color: var(--color-ink); margin-top: .5rem; }
+.demo-form input, .demo-form textarea { width: 100%; font: inherit; padding: .7rem .8rem; border: 1px solid #7D857E; border-radius: var(--radius-sm); background: var(--color-surface-alt); color: var(--color-text); }
+.demo-form button { margin-top: 1rem; justify-self: start; cursor: not-allowed; opacity: 1; }
+.demo-form fieldset:disabled button { background: #E9E4DC; border-color: #7D857E; color: var(--color-ink); }
+.form-ph { margin: .75rem 0 .5rem; }
+.form-note { margin: 1rem 0 0; font-size: .95rem; color: var(--color-text-muted); }
+.form-note a { color: var(--color-primary); font-weight: 600; }
