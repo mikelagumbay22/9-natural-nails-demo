@@ -98,7 +98,7 @@ p { margin: 0 0 1em; }
 }
 .eyebrow::before { content: ""; width: 1.75rem; height: 1px; background: var(--color-accent); }
 .media img { object-position: var(--focus, 50% 50%); }
-.media .stock-badge { position: absolute; right: .9rem; bottom: .9rem; z-index: 2; margin: 0; }
+.media .image-badge { position: absolute; right: .9rem; bottom: .9rem; z-index: 2; margin: 0; }
 .lead { font-size: 1.15rem; color: var(--color-text-muted); }
 .muted { color: var(--color-text-muted); }
 
@@ -417,7 +417,7 @@ a[href^="tel:"] { white-space: nowrap; }
   overflow-wrap: anywhere; text-wrap: balance;
 }
 
-.hero-media .media .stock-badge { top: .9rem; bottom: auto; right: .9rem; }
+.hero-media .media .image-badge { top: .9rem; bottom: auto; right: .9rem; }
 
 .visit-split { display: grid; gap: 2.5rem; align-items: center; }
 .map-card {
